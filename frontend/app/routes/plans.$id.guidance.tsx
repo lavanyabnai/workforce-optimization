@@ -5,6 +5,7 @@ import { usePersonaStore } from "~/stores/persona";
 import type { RunResult } from "~/stores/wizard";
 import { useWizardStore } from "~/stores/wizard";
 import type { WizardScenario } from "./plans.$id";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [{ title: "Run Guidance — BlueNorth WFM" }];
 export const handle = { pageTitle: "Plan Wizard" };
@@ -209,7 +210,7 @@ export default function RunGuidance() {
 
     const minDelay = new Promise((r) => setTimeout(r, 1000));
 
-    fetch(`/api/scenarios/${scenario.id}/run`, {
+    fetch(apiUrl(`/api/scenarios/${scenario.id}/run`), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(wagePayload ? { wage_rate: wagePayload } : {}),
@@ -228,7 +229,7 @@ export default function RunGuidance() {
   async function handleSubmit() {
     setSubmitting(true);
     try {
-      await fetch(`/api/scenarios/${scenario.id}/submit`, { method: "POST" });
+      await fetch(apiUrl(`/api/scenarios/${scenario.id}/submit`), { method: "POST" });
       setSubmitted(true);
       setTimeout(() => navigate("/plans?toast=submitted"), 400);
     } finally {
@@ -239,7 +240,7 @@ export default function RunGuidance() {
   async function handleApprove() {
     setApproving(true);
     try {
-      await fetch(`/api/scenarios/${scenario.id}/approve`, { method: "POST" });
+      await fetch(apiUrl(`/api/scenarios/${scenario.id}/approve`), { method: "POST" });
       setApproved(true);
       setTimeout(() => navigate("/plans?toast=approved"), 600);
     } finally {

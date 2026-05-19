@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useNavigate } from "@remix-run/react";
 import { useState } from "react";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [{ title: "Performance — BlueNorth WFM" }];
 export const handle = { pageTitle: "Performance" };
@@ -241,7 +242,7 @@ export default function Performance() {
   async function handleReforecast() {
     setReforecasting(true);
     try {
-      const res = await fetch("/api/scenarios", {
+      const res = await fetch(apiUrl("/api/scenarios"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

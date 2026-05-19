@@ -5,6 +5,7 @@ import {
   type Shift,
 } from "~/stores/scheduleWizard";
 import { ScheduleGrid, ROLE_COLORS } from "./schedules.$storeId.optimize";
+import { apiUrl } from "~/lib/api";
 
 type ExplainResult = {
   delta_wage: number;
@@ -208,7 +209,7 @@ export default function ScheduleReview() {
     setExplainResult(null);
     try {
       const res = await fetch(
-        `http://localhost:8000/api/schedule/${result.schedule_id}/explain`,
+        apiUrl(`/api/schedule/${result.schedule_id}/explain`),
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

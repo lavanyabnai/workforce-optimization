@@ -3,6 +3,7 @@ import { useOutletContext, useParams } from "@remix-run/react";
 import { useEffect, useRef, useState } from "react";
 import { useWizardStore } from "~/stores/wizard";
 import type { WizardScenario } from "./plans.$id";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [{ title: "Demand Forecast — BlueNorth WFM" }];
 export const handle = { pageTitle: "Plan Wizard" };
@@ -261,11 +262,11 @@ export default function DemandForecast() {
     (async () => {
       setLoading(true);
       try {
-        const res = await fetch("/api/stores");
+        const res = await fetch(apiUrl("/api/stores"));
         const stores: { id: string }[] = await res.json();
         const storeIds = stores.map((s) => s.id);
 
-        const fc = await fetch("/api/forecast", {
+        const fc = await fetch(apiUrl("/api/forecast"), {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

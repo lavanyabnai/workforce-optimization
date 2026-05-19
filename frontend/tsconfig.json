@@ -5,6 +5,7 @@
     "types": ["@types/node"],
     "isolatedModules": true,
     "esModuleInterop": true,
+    "noEmit": true,
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Bundler",

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext } from "@remix-run/react";
 import { useScheduleWizardStore, type Employee } from "~/stores/scheduleWizard";
+import { apiUrl } from "~/lib/api";
 
 const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
@@ -33,7 +34,7 @@ export default function ScheduleConstraints() {
   useEffect(() => {
     if (fetchedRef.done || employees.length > 0) return;
     fetchedRef.done = true;
-    fetch(`http://localhost:8000/api/employees?store_id=${storeId}`)
+    fetch(apiUrl(`/api/employees?store_id=${storeId}`))
       .then((r) => r.json())
       .then((data: Employee[]) => setEmployees(data))
       .catch(() => {});

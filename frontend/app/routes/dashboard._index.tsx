@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, useLoaderData, useNavigate } from "@remix-run/react";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [{ title: "Dashboard — BlueNorth WFM" }];
 export const handle = { pageTitle: "Dashboard" };
@@ -16,7 +17,7 @@ type Scenario = {
 };
 
 export async function loader() {
-  const res = await fetch("http://localhost:8000/api/scenarios");
+  const res = await fetch(apiUrl("/api/scenarios"));
   if (!res.ok) throw new Error("Failed to load scenarios");
   const scenarios: Scenario[] = await res.json();
   return json({ scenarios });

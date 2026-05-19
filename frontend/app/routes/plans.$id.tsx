@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { AiAssistant, AiAssistantToggle } from "~/components/AiAssistant";
 import { usePersonaStore } from "~/stores/persona";
 import { useWizardStore } from "~/stores/wizard";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => [
   { title: `${data?.scenario?.name ?? "Plan"} — BlueNorth WFM` },
@@ -32,7 +33,7 @@ export type WizardScenario = {
 };
 
 export async function loader({ params }: LoaderFunctionArgs) {
-  const res = await fetch(`http://localhost:8000/api/scenarios/${params.id}`);
+  const res = await fetch(apiUrl(`/api/scenarios/${params.id}`));
   if (!res.ok) throw new Response("Scenario not found", { status: 404 });
   const scenario: WizardScenario = await res.json();
   return json({ scenario });
@@ -48,7 +49,7 @@ export async function action({ request, params }: ActionFunctionArgs) {
     return json({ ok: false, error: "Bad JSON" }, { status: 400 });
   }
   const clean = Object.fromEntries(Object.entries(inputs).filter(([, v]) => v !== undefined));
-  await fetch(`http://localhost:8000/api/scenarios/${params.id}/inputs`, {
+  await fetch(apiUrl(`/api/scenarios/${params.id}/inputs`), {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ inputs: clean }),

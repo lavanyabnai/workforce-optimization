@@ -8,6 +8,7 @@ import {
   useSubmit,
 } from "@remix-run/react";
 import { useCallback, useEffect, useRef, useState } from "react";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [{ title: "Labor Plans — BlueNorth WFM" }];
 
@@ -64,15 +65,14 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
   // Demo reset: ?reset=1 wipes DB and reloads fixtures
   if (url.searchParams.get("reset") === "1") {
-    await fetch("http://localhost:8000/api/admin/reset", { method: "POST" }).catch(() => {});
+    await fetch(apiUrl("/api/admin/reset"), { method: "POST" }).catch(() => {});
     return redirect("/plans?toast=reset");
   }
 
   const status = url.searchParams.get("status") ?? "";
   const q = url.searchParams.get("q") ?? "";
 
-  const apiUrl = new URL("/api/scenarios", "http://localhost:8000");
-  const res = await fetch(apiUrl.toString());
+  const res = await fetch(apiUrl("/api/scenarios"));
   if (!res.ok) throw new Error("Failed to load scenarios");
   let scenarios: Scenario[] = await res.json();
 
@@ -95,7 +95,7 @@ export async function action({ request }: ActionFunctionArgs) {
 
   if (!name) return json({ error: "Name is required" }, { status: 400 });
 
-  const res = await fetch("http://localhost:8000/api/scenarios", {
+  const res = await fetch(apiUrl("/api/scenarios"), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, period_start, period_end }),

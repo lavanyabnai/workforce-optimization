@@ -2,6 +2,7 @@ import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, Outlet, useLoaderData, useLocation, useNavigate, useParams } from "@remix-run/react";
 import { AiAssistant, AiAssistantToggle } from "~/components/AiAssistant";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => [
   { title: `Schedule — ${data?.storeName ?? "Store"} — BlueNorth WFM` },
@@ -12,7 +13,7 @@ export const handle = { pageTitle: "Schedule Wizard" };
 type StoreData = { id: string; name: string; city: string; state: string; division: string };
 
 export async function loader({ params }: LoaderFunctionArgs) {
-  const res = await fetch("http://localhost:8000/api/stores");
+  const res = await fetch(apiUrl("/api/stores"));
   const stores: StoreData[] = res.ok ? await res.json() : [];
   const store = stores.find((s) => s.id === params.storeId) ?? {
     id: params.storeId ?? "S-0001",

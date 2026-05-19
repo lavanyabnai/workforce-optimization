@@ -4,6 +4,7 @@ import { useLoaderData, useParams } from "@remix-run/react";
 import { useMemo, useState } from "react";
 import { useWizardStore } from "~/stores/wizard";
 import type { HoursOverride } from "~/stores/wizard";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [{ title: "Operating Hours — BlueNorth WFM" }];
 export const handle = { pageTitle: "Plan Wizard" };
@@ -17,7 +18,7 @@ type StoreRow = {
 };
 
 export async function loader(_: LoaderFunctionArgs) {
-  const res = await fetch("http://localhost:8000/api/stores");
+  const res = await fetch(apiUrl("/api/stores"));
   if (!res.ok) throw new Response("Failed to load stores", { status: 500 });
   const stores: StoreRow[] = await res.json();
   return json({ stores });

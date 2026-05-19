@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { RunResult, WageMode } from "~/stores/wizard";
 import { useWizardStore } from "~/stores/wizard";
 import type { WizardScenario } from "./plans.$id";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [{ title: "Wage Rate — BlueNorth WFM" }];
 export const handle = { pageTitle: "Plan Wizard" };
@@ -59,7 +60,7 @@ export default function WageRate() {
     setTickerLoading(true);
     debounceRef.current = setTimeout(async () => {
       try {
-        const res = await fetch(`/api/scenarios/${scenario.id}/run?dryRun=true`, {
+        const res = await fetch(apiUrl(`/api/scenarios/${scenario.id}/run?dryRun=true`), {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ wage_rate: wagePayload() }),

@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
+import { apiUrl } from "~/lib/api";
 
 export const meta: MetaFunction = () => [
   { title: "Schedules — BlueNorth WFM" },
@@ -10,7 +11,7 @@ type Store = { id: string; name: string; city: string; state: string; division: 
 
 export async function loader() {
   try {
-    const res = await fetch("http://localhost:8000/api/stores");
+    const res = await fetch(apiUrl("/api/stores"));
     const stores: Store[] = res.ok ? await res.json() : [];
     return json({ stores });
   } catch {

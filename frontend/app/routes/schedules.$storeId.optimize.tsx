@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useOutletContext } from "@remix-run/react";
 import { useScheduleWizardStore, type Shift, type OptimizeResult } from "~/stores/scheduleWizard";
+import { apiUrl } from "~/lib/api";
 
 export const ROLE_COLORS: Record<string, string> = {
   "Store Manager":   "#7b2d8b",
@@ -224,7 +225,7 @@ export default function ScheduleOptimize() {
   async function runOptimizer() {
     startProgress();
     const [res] = await Promise.all([
-      fetch("http://localhost:8000/api/schedule/optimize", {
+      fetch(apiUrl("/api/schedule/optimize"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ store_id: storeIdState || storeId, week_iso: week }),
