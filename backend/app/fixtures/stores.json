@@ -1,0 +1,1208 @@
+[
+  {
+    "id": "S-0001",
+    "name": "Sunnyvale Plaza",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.3688,
+    "lon": -122.0363
+  },
+  {
+    "id": "S-0002",
+    "name": "San Jose Almaden",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.2853,
+    "lon": -121.92
+  },
+  {
+    "id": "S-0003",
+    "name": "Palo Alto University",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.4419,
+    "lon": -122.143
+  },
+  {
+    "id": "S-0004",
+    "name": "Oakland Broadway",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.8044,
+    "lon": -122.2712
+  },
+  {
+    "id": "S-0005",
+    "name": "San Francisco Mission",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.7599,
+    "lon": -122.4148
+  },
+  {
+    "id": "S-0006",
+    "name": "Santa Clara Central",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.3541,
+    "lon": -121.9552
+  },
+  {
+    "id": "S-0007",
+    "name": "Fremont Mowry",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.5485,
+    "lon": -121.9886
+  },
+  {
+    "id": "S-0008",
+    "name": "San Mateo Downtown",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.563,
+    "lon": -122.3229
+  },
+  {
+    "id": "S-0009",
+    "name": "Redwood City Main",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.4852,
+    "lon": -122.2477
+  },
+  {
+    "id": "S-0010",
+    "name": "Mountain View Castro",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "custom",
+      "open": "06:00",
+      "close": "23:00"
+    },
+    "lat": 37.3861,
+    "lon": -122.0839
+  },
+  {
+    "id": "S-0011",
+    "name": "Cupertino Vallco",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.323,
+    "lon": -122.0322
+  },
+  {
+    "id": "S-0012",
+    "name": "Berkeley Telegraph",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.8716,
+    "lon": -122.2727
+  },
+  {
+    "id": "S-0013",
+    "name": "Hayward Mission",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.6688,
+    "lon": -122.081
+  },
+  {
+    "id": "S-0014",
+    "name": "Union City Decoto",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.5877,
+    "lon": -122.0166
+  },
+  {
+    "id": "S-0015",
+    "name": "Milpitas McCarthy",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.4323,
+    "lon": -121.8995
+  },
+  {
+    "id": "S-0016",
+    "name": "Los Gatos Winchester",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.2211,
+    "lon": -121.9669
+  },
+  {
+    "id": "S-0017",
+    "name": "Campbell Hamilton",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.2872,
+    "lon": -121.9358
+  },
+  {
+    "id": "S-0018",
+    "name": "Santa Cruz Pacific",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 36.9741,
+    "lon": -122.0308
+  },
+  {
+    "id": "S-0019",
+    "name": "San Rafael Fourth",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.9735,
+    "lon": -122.5311
+  },
+  {
+    "id": "S-0020",
+    "name": "Novato Redwood",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 38.1074,
+    "lon": -122.5717
+  },
+  {
+    "id": "S-0021",
+    "name": "Daly City Geneva",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.7069,
+    "lon": -122.4643
+  },
+  {
+    "id": "S-0022",
+    "name": "South San Francisco Grand",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.6547,
+    "lon": -122.4072
+  },
+  {
+    "id": "S-0023",
+    "name": "San Bruno Huntington",
+    "region": "West",
+    "division": "West",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.6304,
+    "lon": -122.4106
+  },
+  {
+    "id": "S-0024",
+    "name": "Burlingame Broadway",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.5796,
+    "lon": -122.3477
+  },
+  {
+    "id": "S-0025",
+    "name": "Foster City Chess",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.5585,
+    "lon": -122.2664
+  },
+  {
+    "id": "S-0026",
+    "name": "Belmont Old County",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.5202,
+    "lon": -122.2758
+  },
+  {
+    "id": "S-0027",
+    "name": "San Carlos Laurel",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.5089,
+    "lon": -122.2583
+  },
+  {
+    "id": "S-0028",
+    "name": "Menlo Park El Camino",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.4529,
+    "lon": -122.182
+  },
+  {
+    "id": "S-0029",
+    "name": "Sunnyvale Mathilda",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.3832,
+    "lon": -122.0294
+  },
+  {
+    "id": "S-0030",
+    "name": "San Jose Willow Glen",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.3054,
+    "lon": -121.8862
+  },
+  {
+    "id": "S-0031",
+    "name": "San Jose Eastside",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.3387,
+    "lon": -121.8258
+  },
+  {
+    "id": "S-0032",
+    "name": "Oakland Fruitvale",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.7748,
+    "lon": -122.2249
+  },
+  {
+    "id": "S-0033",
+    "name": "Richmond Macdonald",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.9358,
+    "lon": -122.3477
+  },
+  {
+    "id": "S-0034",
+    "name": "Concord Monument",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.978,
+    "lon": -121.9788
+  },
+  {
+    "id": "S-0035",
+    "name": "Walnut Creek Main",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.9101,
+    "lon": -122.0652
+  },
+  {
+    "id": "S-0036",
+    "name": "Pleasanton First",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.6624,
+    "lon": -121.8746
+  },
+  {
+    "id": "S-0037",
+    "name": "Livermore Las Positas",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.6819,
+    "lon": -121.768
+  },
+  {
+    "id": "S-0038",
+    "name": "Stockton Pacific",
+    "region": "West",
+    "division": "West",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.9577,
+    "lon": -121.2908
+  },
+  {
+    "id": "S-0039",
+    "name": "Downtown Dallas",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 32.7767,
+    "lon": -96.797
+  },
+  {
+    "id": "S-0040",
+    "name": "Houston Westheimer",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 29.7604,
+    "lon": -95.3698
+  },
+  {
+    "id": "S-0041",
+    "name": "Chicago Michigan Ave",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 41.8781,
+    "lon": -87.6298
+  },
+  {
+    "id": "S-0042",
+    "name": "Austin Congress",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 30.2672,
+    "lon": -97.7431
+  },
+  {
+    "id": "S-0043",
+    "name": "Denver Colfax",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.7392,
+    "lon": -104.9903
+  },
+  {
+    "id": "S-0044",
+    "name": "San Antonio Riverwalk",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 29.4241,
+    "lon": -98.4936
+  },
+  {
+    "id": "S-0045",
+    "name": "Fort Worth Magnolia",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "custom",
+      "open": "06:00",
+      "close": "23:00"
+    },
+    "lat": 32.7555,
+    "lon": -97.3308
+  },
+  {
+    "id": "S-0046",
+    "name": "El Paso Mesa",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 31.7619,
+    "lon": -106.485
+  },
+  {
+    "id": "S-0047",
+    "name": "Oklahoma City Broadway",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 35.4676,
+    "lon": -97.5164
+  },
+  {
+    "id": "S-0048",
+    "name": "Kansas City Main",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.0997,
+    "lon": -94.5786
+  },
+  {
+    "id": "S-0049",
+    "name": "Minneapolis Nicollet",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 44.9778,
+    "lon": -93.265
+  },
+  {
+    "id": "S-0050",
+    "name": "St Louis Grand",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 38.627,
+    "lon": -90.1994
+  },
+  {
+    "id": "S-0051",
+    "name": "Memphis Union",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 35.1495,
+    "lon": -90.049
+  },
+  {
+    "id": "S-0052",
+    "name": "Nashville Broadway",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 36.1627,
+    "lon": -86.7816
+  },
+  {
+    "id": "S-0053",
+    "name": "Louisville Fourth",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 38.2527,
+    "lon": -85.7585
+  },
+  {
+    "id": "S-0054",
+    "name": "Indianapolis Meridian",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.7684,
+    "lon": -86.1581
+  },
+  {
+    "id": "S-0055",
+    "name": "Columbus High",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.9612,
+    "lon": -82.9988
+  },
+  {
+    "id": "S-0056",
+    "name": "Cleveland Euclid",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 41.4993,
+    "lon": -81.6944
+  },
+  {
+    "id": "S-0057",
+    "name": "Detroit Woodward",
+    "region": "Central",
+    "division": "Central",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 42.3314,
+    "lon": -83.0458
+  },
+  {
+    "id": "S-0058",
+    "name": "Milwaukee Wisconsin",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 43.0389,
+    "lon": -87.9065
+  },
+  {
+    "id": "S-0059",
+    "name": "Madison State",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 43.0731,
+    "lon": -89.4012
+  },
+  {
+    "id": "S-0060",
+    "name": "Des Moines Grand",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 41.5868,
+    "lon": -93.625
+  },
+  {
+    "id": "S-0061",
+    "name": "Omaha Farnam",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 41.2565,
+    "lon": -95.9345
+  },
+  {
+    "id": "S-0062",
+    "name": "Tulsa Peoria",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 36.154,
+    "lon": -95.9929
+  },
+  {
+    "id": "S-0063",
+    "name": "Wichita Douglas",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.6872,
+    "lon": -97.3301
+  },
+  {
+    "id": "S-0064",
+    "name": "Lubbock University",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 33.5779,
+    "lon": -101.8552
+  },
+  {
+    "id": "S-0065",
+    "name": "Amarillo Polk",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 35.2219,
+    "lon": -101.8313
+  },
+  {
+    "id": "S-0066",
+    "name": "Corpus Christi Shoreline",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 27.8006,
+    "lon": -97.3964
+  },
+  {
+    "id": "S-0067",
+    "name": "Laredo Convent",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 27.5006,
+    "lon": -99.5075
+  },
+  {
+    "id": "S-0068",
+    "name": "McAllen Main",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 26.2034,
+    "lon": -98.23
+  },
+  {
+    "id": "S-0069",
+    "name": "Springfield Illinois",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.7817,
+    "lon": -89.6501
+  },
+  {
+    "id": "S-0070",
+    "name": "Topeka Kansas",
+    "region": "Central",
+    "division": "Central",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.0558,
+    "lon": -95.689
+  },
+  {
+    "id": "S-0071",
+    "name": "Times Square",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.758,
+    "lon": -73.9855
+  },
+  {
+    "id": "S-0072",
+    "name": "Brooklyn Atlantic",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.6782,
+    "lon": -73.9442
+  },
+  {
+    "id": "S-0073",
+    "name": "Boston Newbury",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 42.3505,
+    "lon": -71.0789
+  },
+  {
+    "id": "S-0074",
+    "name": "Philadelphia Market",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.9526,
+    "lon": -75.1652
+  },
+  {
+    "id": "S-0075",
+    "name": "Washington Dupont",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 38.9072,
+    "lon": -77.0369
+  },
+  {
+    "id": "S-0076",
+    "name": "Manhattan Upper West",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.787,
+    "lon": -73.9754
+  },
+  {
+    "id": "S-0077",
+    "name": "Manhattan Midtown",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.7549,
+    "lon": -73.984
+  },
+  {
+    "id": "S-0078",
+    "name": "Brooklyn Flatbush",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.6501,
+    "lon": -73.9496
+  },
+  {
+    "id": "S-0079",
+    "name": "Queens Jamaica",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.7282,
+    "lon": -73.7949
+  },
+  {
+    "id": "S-0080",
+    "name": "Bronx Grand Concourse",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "custom",
+      "open": "06:00",
+      "close": "23:00"
+    },
+    "lat": 40.8448,
+    "lon": -73.8648
+  },
+  {
+    "id": "S-0081",
+    "name": "Newark Broad",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.7357,
+    "lon": -74.1724
+  },
+  {
+    "id": "S-0082",
+    "name": "Jersey City Grove",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.7178,
+    "lon": -74.0431
+  },
+  {
+    "id": "S-0083",
+    "name": "Hartford Main",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 41.7658,
+    "lon": -72.6851
+  },
+  {
+    "id": "S-0084",
+    "name": "Providence Westminster",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 41.824,
+    "lon": -71.4128
+  },
+  {
+    "id": "S-0085",
+    "name": "Springfield Mass",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 42.1015,
+    "lon": -72.5898
+  },
+  {
+    "id": "S-0086",
+    "name": "Worcester Main",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 42.2626,
+    "lon": -71.8023
+  },
+  {
+    "id": "S-0087",
+    "name": "Albany Broadway",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 42.6526,
+    "lon": -73.7562
+  },
+  {
+    "id": "S-0088",
+    "name": "Syracuse Salina",
+    "region": "East",
+    "division": "East",
+    "type": "Franchise",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 43.0481,
+    "lon": -76.1474
+  },
+  {
+    "id": "S-0089",
+    "name": "Rochester Monroe",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 43.1566,
+    "lon": -77.6088
+  },
+  {
+    "id": "S-0090",
+    "name": "Buffalo Main",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 42.8864,
+    "lon": -78.8784
+  },
+  {
+    "id": "S-0091",
+    "name": "Pittsburgh Forbes",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 40.4406,
+    "lon": -79.9959
+  },
+  {
+    "id": "S-0092",
+    "name": "Baltimore Inner Harbor",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 39.2904,
+    "lon": -76.6122
+  },
+  {
+    "id": "S-0093",
+    "name": "Richmond Broad",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 37.5407,
+    "lon": -77.436
+  },
+  {
+    "id": "S-0094",
+    "name": "Norfolk Granby",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 36.8508,
+    "lon": -76.2859
+  },
+  {
+    "id": "S-0095",
+    "name": "Charlotte Tryon",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 35.2271,
+    "lon": -80.8431
+  },
+  {
+    "id": "S-0096",
+    "name": "Raleigh Fayetteville",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 35.7796,
+    "lon": -78.6382
+  },
+  {
+    "id": "S-0097",
+    "name": "Atlanta Peachtree",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 33.749,
+    "lon": -84.388
+  },
+  {
+    "id": "S-0098",
+    "name": "Miami Brickell",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 25.7617,
+    "lon": -80.1918
+  },
+  {
+    "id": "S-0099",
+    "name": "Orlando Orange",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 28.5383,
+    "lon": -81.3792
+  },
+  {
+    "id": "S-0100",
+    "name": "Tampa Franklin",
+    "region": "East",
+    "division": "East",
+    "type": "Corporate",
+    "hours_open": {
+      "type": "24/7"
+    },
+    "lat": 27.9506,
+    "lon": -82.4572
+  }
+]

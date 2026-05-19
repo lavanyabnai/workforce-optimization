@@ -1,0 +1,141 @@
+[
+  {
+    "id": "PLAN-2026-Q1-WAGE",
+    "name": "FY26 Increase Wage Rate",
+    "status": "Live",
+    "baseline_id": null,
+    "period_start": 10,
+    "period_end": 12,
+    "locations": 100,
+    "created_by": "carla",
+    "created_at": "2026-01-15T09:00:00Z",
+    "updated_at": "2026-03-10T14:22:00Z",
+    "scenario_inputs": {
+      "operating_hours": {
+        "default": "24/7",
+        "deviating_stores": ["S-0010", "S-0045", "S-0080"],
+        "deviated_hours": {"open": "06:00", "close": "23:00"}
+      },
+      "labor_model": {
+        "splh_targets": {
+          "Store Manager": 200.00,
+          "Shift Lead": 180.00,
+          "Cashier": 130.00,
+          "Sales Associate": 120.00,
+          "Food Service": 110.00,
+          "Coffee Bar": 100.00,
+          "7NOW Driver": 95.00
+        },
+        "iplh_targets": {
+          "sandwiches": 18,
+          "hot_dogs": 22,
+          "taquitos": 24,
+          "fresh_coffee": 30,
+          "pizza": 14
+        },
+        "fixed_coverage": [
+          {"daypart": "overnight", "start": "00:00", "end": "06:00", "role": "Cashier", "min_count": 1},
+          {"daypart": "overnight", "start": "00:00", "end": "06:00", "role": "Shift Lead", "min_count": 0.5}
+        ]
+      },
+      "wage_rate": {
+        "mode": "uniform",
+        "uniform_delta": 0.50,
+        "baseline_avg_wage": 14.76
+      },
+      "demand_forecast": {
+        "method": "synthetic",
+        "base_annual_sales": 16400000,
+        "by_division": {
+          "West": {"sales": 5576000, "stores": 38},
+          "Central": {"sales": 5248000, "stores": 32},
+          "East": {"sales": 5576000, "stores": 30}
+        }
+      }
+    },
+    "scenario_outputs": {
+      "total_hours": 161200,
+      "total_wages": 2460000,
+      "labor_pct": 15.0,
+      "by_division": {
+        "West": {
+          "hours": 61256,
+          "wages_budget": 680000,
+          "wages_projected": 720000,
+          "labor_pct": 12.9
+        },
+        "Central": {
+          "hours": 51584,
+          "wages_budget": 820000,
+          "wages_projected": 845000,
+          "labor_pct": 16.1
+        },
+        "East": {
+          "hours": 48360,
+          "wages_budget": 960000,
+          "wages_projected": 995000,
+          "labor_pct": 17.8
+        }
+      }
+    }
+  },
+  {
+    "id": "PLAN-2026-Q2-FORECAST",
+    "name": "FY26 Q2 Demand Reforecast",
+    "status": "Draft",
+    "baseline_id": "PLAN-2026-Q1-WAGE",
+    "period_start": 13,
+    "period_end": 16,
+    "locations": 100,
+    "created_by": "carla",
+    "created_at": "2026-03-20T10:15:00Z",
+    "updated_at": "2026-03-20T10:15:00Z",
+    "scenario_inputs": {},
+    "scenario_outputs": null
+  },
+  {
+    "id": "PLAN-2026-OVERNIGHT",
+    "name": "FY26 Overnight Coverage Study",
+    "status": "In Review",
+    "baseline_id": "PLAN-2026-Q1-WAGE",
+    "period_start": 10,
+    "period_end": 12,
+    "locations": 100,
+    "created_by": "carla",
+    "created_at": "2026-02-01T08:30:00Z",
+    "updated_at": "2026-02-28T16:45:00Z",
+    "scenario_inputs": {
+      "labor_model": {
+        "fixed_coverage": [
+          {"daypart": "overnight", "start": "22:00", "end": "06:00", "role": "Cashier", "min_count": 2},
+          {"daypart": "overnight", "start": "22:00", "end": "06:00", "role": "Shift Lead", "min_count": 1}
+        ]
+      }
+    },
+    "scenario_outputs": {
+      "total_hours": 168400,
+      "total_wages": 2590000,
+      "labor_pct": 15.8,
+      "by_division": {}
+    }
+  },
+  {
+    "id": "PLAN-2025-BASELINE",
+    "name": "FY25 Baseline Actuals",
+    "status": "Approved",
+    "baseline_id": null,
+    "period_start": 1,
+    "period_end": 12,
+    "locations": 98,
+    "created_by": "lin",
+    "created_at": "2025-12-01T09:00:00Z",
+    "updated_at": "2026-01-10T11:00:00Z",
+    "scenario_inputs": {},
+    "scenario_outputs": {
+      "total_hours": 156800,
+      "total_wages": 2310000,
+      "labor_pct": 14.6,
+      "by_division": {}
+    }
+  }
+]

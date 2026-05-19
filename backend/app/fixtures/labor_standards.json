@@ -1,0 +1,74 @@
+{
+  "version": "FY26",
+  "effective_date": "2026-01-01",
+  "splh_targets": [
+    {"role": "Store Manager",   "driver": "SPLH", "rate": 200.00, "unit": "$/hr"},
+    {"role": "Shift Lead",      "driver": "SPLH", "rate": 180.00, "unit": "$/hr"},
+    {"role": "Cashier",         "driver": "SPLH", "rate": 130.00, "unit": "$/hr"},
+    {"role": "Sales Associate", "driver": "SPLH", "rate": 120.00, "unit": "$/hr"},
+    {"role": "Food Service",    "driver": "SPLH", "rate": 110.00, "unit": "$/hr"},
+    {"role": "Coffee Bar",      "driver": "SPLH", "rate": 100.00, "unit": "$/hr"},
+    {"role": "7NOW Driver",     "driver": "SPLH", "rate": 95.00,  "unit": "$/hr"}
+  ],
+  "iplh_targets": [
+    {"item_type": "sandwiches",   "driver": "IPLH", "rate": 18, "unit": "items/hr"},
+    {"item_type": "hot_dogs",     "driver": "IPLH", "rate": 22, "unit": "items/hr"},
+    {"item_type": "taquitos",     "driver": "IPLH", "rate": 24, "unit": "items/hr"},
+    {"item_type": "fresh_coffee", "driver": "IPLH", "rate": 30, "unit": "items/hr"},
+    {"item_type": "pizza",        "driver": "IPLH", "rate": 14, "unit": "items/hr"}
+  ],
+  "fixed_coverage_rules": [
+    {
+      "id": "FCR-001",
+      "name": "Overnight Single Clerk",
+      "daypart": "overnight",
+      "start": "00:00",
+      "end": "06:00",
+      "role": "Cashier",
+      "min_count": 1,
+      "applies_to": "all_stores",
+      "rationale": "Safety compliance — single point of failure risk"
+    },
+    {
+      "id": "FCR-002",
+      "name": "Overnight Shift Lead",
+      "daypart": "overnight",
+      "start": "00:00",
+      "end": "06:00",
+      "role": "Shift Lead",
+      "min_count": 0.5,
+      "applies_to": "24_7_stores",
+      "rationale": "Required for stores open 24/7 per corporate policy"
+    },
+    {
+      "id": "FCR-003",
+      "name": "Morning Rush Coffee Bar",
+      "daypart": "morning_rush",
+      "start": "06:00",
+      "end": "10:00",
+      "role": "Coffee Bar",
+      "min_count": 1,
+      "applies_to": "stores_with_coffee_bar",
+      "rationale": "Peak coffee demand — IPLH target cannot be met without dedicated staff"
+    },
+    {
+      "id": "FCR-004",
+      "name": "Peak Evening Coverage",
+      "daypart": "evening_peak",
+      "start": "17:00",
+      "end": "20:00",
+      "role": "Cashier",
+      "min_count": 2,
+      "applies_to": "high_volume_stores",
+      "rationale": "Volume threshold >$500/hr requires dual cashier coverage"
+    }
+  ],
+  "daypart_definitions": {
+    "overnight":      {"start": "00:00", "end": "06:00"},
+    "morning_rush":   {"start": "06:00", "end": "10:00"},
+    "midday":         {"start": "10:00", "end": "14:00"},
+    "afternoon":      {"start": "14:00", "end": "17:00"},
+    "evening_peak":   {"start": "17:00", "end": "20:00"},
+    "late_evening":   {"start": "20:00", "end": "00:00"}
+  }
+}

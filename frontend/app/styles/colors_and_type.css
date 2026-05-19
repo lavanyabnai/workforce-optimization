@@ -1,0 +1,211 @@
+/* ============================================================
+   BlueNorth WFM — 7-Eleven Design System Tokens
+   Lifted from 7-11_DS / colors_and_type.css
+   Fonts are self-hosted in /fonts/ (no Google CDN at demo).
+   ============================================================ */
+
+/* ── Fonts ── */
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Archivo-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Archivo-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Archivo-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Archivo-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/Archivo-ExtraBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/DMSans-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/DMSans-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/DMSans-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/DMSans-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+}
+
+/* ── Color tokens ── */
+:root {
+  /* Brand primaries */
+  --c-signal: #00c36c;        /* 7-Eleven signal green */
+  --c-signal-dark: #009e56;
+  --c-signal-light: #e6faf2;
+  --c-orange: #ff6600;        /* 7-Eleven orange */
+  --c-orange-light: #fff3eb;
+  --c-red: #e8244e;
+  --c-red-light: #fdedf1;
+
+  /* Neutrals */
+  --c-ink: #1a1a1a;           /* near-black */
+  --c-ink-60: rgba(26,26,26,0.6);
+  --c-ink-30: rgba(26,26,26,0.3);
+  --c-ink-10: rgba(26,26,26,0.1);
+  --c-cream: #faf8f5;         /* page bg */
+  --c-cream-dark: #f0ede8;
+  --c-white: #ffffff;
+
+  /* Accent / slurpee palette */
+  --c-grape: #7b2d8b;
+  --c-grape-light: #f5edf7;
+  --c-sky: #0077cc;
+  --c-sky-light: #e5f2fb;
+
+  /* Status */
+  --c-status-draft: #8a8a8a;
+  --c-status-review: var(--c-orange);
+  --c-status-approved: var(--c-signal);
+  --c-status-live: var(--c-ink);
+
+  /* ── Typography tokens ── */
+  --font-display: "Archivo", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Mono", monospace;
+
+  /* ── Spacing ── */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+
+  /* ── Radii ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.10);
+  --shadow-sticker: 5px 5px 0 0 var(--c-ink);
+  --shadow-sticker-hover: 3px 3px 0 0 var(--c-ink);
+
+  /* ── Borders ── */
+  --border-default: 1px solid var(--c-ink-10);
+  --border-strong: 1.5px solid var(--c-ink-30);
+  --border-ink: 1.5px solid var(--c-ink);
+
+  /* ── Transitions ── */
+  --transition-fast: 100ms ease;
+  --transition-base: 200ms ease;
+}
+
+/* ── Base resets ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--c-ink);
+  background: var(--c-cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  margin: 0 0 var(--space-sm);
+  line-height: 1.15;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 15px; }
+
+p {
+  margin: 0 0 var(--space-md);
+}
+
+a {
+  color: var(--c-signal-dark);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* ── Utility: eyebrow label ── */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--c-ink-60);
+}
+
+/* ── Utility: mono numbers ── */
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}

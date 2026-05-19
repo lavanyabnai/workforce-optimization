@@ -1,0 +1,28 @@
+{
+  "name": "bluenorth-wfm-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remix vite:dev",
+    "build": "remix vite:build",
+    "start": "remix-serve ./build/server/index.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.16.0",
+    "@remix-run/react": "^2.16.0",
+    "@remix-run/serve": "^2.16.0",
+    "isbot": "^5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.16.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.7.0",
+    "vite": "^5.4.21",
+    "vite-tsconfig-paths": "^5.1.0"
+  }
+}

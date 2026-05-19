@@ -1,0 +1,242 @@
+[
+  {
+    "id": "E-001",
+    "store_id": "S-0001",
+    "name": "Maria Gonzalez",
+    "role": "Store Manager",
+    "contract": "FT",
+    "max_hrs_week": 45,
+    "hourly_wage": 26.00,
+    "skills": ["cashiering", "food_service", "management", "coffee_bar"],
+    "availability": {
+      "Mon": {"start": "06:00", "end": "22:00"},
+      "Tue": {"start": "06:00", "end": "22:00"},
+      "Wed": {"start": "06:00", "end": "22:00"},
+      "Thu": {"start": "06:00", "end": "22:00"},
+      "Fri": {"start": "06:00", "end": "22:00"},
+      "Sat": null,
+      "Sun": null
+    },
+    "preferences": {"shift_type": "morning", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-002",
+    "store_id": "S-0001",
+    "name": "James Park",
+    "role": "Shift Lead",
+    "contract": "FT",
+    "max_hrs_week": 40,
+    "hourly_wage": 21.50,
+    "skills": ["cashiering", "food_service", "management"],
+    "availability": {
+      "Mon": {"start": "06:00", "end": "18:00"},
+      "Tue": {"start": "06:00", "end": "18:00"},
+      "Wed": {"start": "06:00", "end": "18:00"},
+      "Thu": {"start": "06:00", "end": "18:00"},
+      "Fri": {"start": "06:00", "end": "18:00"},
+      "Sat": {"start": "08:00", "end": "18:00"},
+      "Sun": null
+    },
+    "preferences": {"shift_type": "morning", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-003",
+    "store_id": "S-0001",
+    "name": "Aisha Williams",
+    "role": "Shift Lead",
+    "contract": "FT",
+    "max_hrs_week": 40,
+    "hourly_wage": 21.00,
+    "skills": ["cashiering", "food_service", "management", "7now_delivery"],
+    "availability": {
+      "Mon": null,
+      "Tue": {"start": "14:00", "end": "23:59"},
+      "Wed": {"start": "14:00", "end": "23:59"},
+      "Thu": {"start": "14:00", "end": "23:59"},
+      "Fri": {"start": "14:00", "end": "23:59"},
+      "Sat": {"start": "14:00", "end": "23:59"},
+      "Sun": {"start": "14:00", "end": "23:59"}
+    },
+    "preferences": {"shift_type": "evening", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-004",
+    "store_id": "S-0001",
+    "name": "Carlos Rivera",
+    "role": "Cashier",
+    "contract": "FT",
+    "max_hrs_week": 40,
+    "hourly_wage": 18.50,
+    "skills": ["cashiering"],
+    "availability": {
+      "Mon": {"start": "06:00", "end": "18:00"},
+      "Tue": {"start": "06:00", "end": "18:00"},
+      "Wed": {"start": "06:00", "end": "18:00"},
+      "Thu": {"start": "06:00", "end": "18:00"},
+      "Fri": {"start": "06:00", "end": "18:00"},
+      "Sat": {"start": "06:00", "end": "14:00"},
+      "Sun": null
+    },
+    "preferences": {"shift_type": "morning", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-005",
+    "store_id": "S-0001",
+    "name": "Priya Patel",
+    "role": "Cashier",
+    "contract": "PT",
+    "max_hrs_week": 25,
+    "hourly_wage": 17.50,
+    "skills": ["cashiering"],
+    "availability": {
+      "Mon": null,
+      "Tue": {"start": "09:00", "end": "17:00"},
+      "Wed": {"start": "09:00", "end": "17:00"},
+      "Thu": null,
+      "Fri": {"start": "09:00", "end": "17:00"},
+      "Sat": {"start": "09:00", "end": "17:00"},
+      "Sun": {"start": "10:00", "end": "16:00"}
+    },
+    "preferences": {"shift_type": "day", "max_consecutive_days": 4}
+  },
+  {
+    "id": "E-006",
+    "store_id": "S-0001",
+    "name": "Darnell Thompson",
+    "role": "Cashier",
+    "contract": "PT",
+    "max_hrs_week": 24,
+    "hourly_wage": 17.00,
+    "skills": ["cashiering", "7now_delivery"],
+    "availability": {
+      "Mon": {"start": "22:00", "end": "23:59"},
+      "Tue": {"start": "00:00", "end": "08:00"},
+      "Wed": {"start": "22:00", "end": "23:59"},
+      "Thu": {"start": "00:00", "end": "08:00"},
+      "Fri": {"start": "22:00", "end": "23:59"},
+      "Sat": {"start": "00:00", "end": "08:00"},
+      "Sun": {"start": "22:00", "end": "23:59"}
+    },
+    "preferences": {"shift_type": "overnight", "max_consecutive_days": 4}
+  },
+  {
+    "id": "E-007",
+    "store_id": "S-0001",
+    "name": "Sofia Chen",
+    "role": "Sales Associate",
+    "contract": "FT",
+    "max_hrs_week": 40,
+    "hourly_wage": 18.00,
+    "skills": ["cashiering", "stocking"],
+    "availability": {
+      "Mon": {"start": "08:00", "end": "20:00"},
+      "Tue": {"start": "08:00", "end": "20:00"},
+      "Wed": {"start": "08:00", "end": "20:00"},
+      "Thu": {"start": "08:00", "end": "20:00"},
+      "Fri": {"start": "08:00", "end": "20:00"},
+      "Sat": null,
+      "Sun": null
+    },
+    "preferences": {"shift_type": "day", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-008",
+    "store_id": "S-0001",
+    "name": "Marcus Johnson",
+    "role": "Sales Associate",
+    "contract": "PT",
+    "max_hrs_week": 20,
+    "hourly_wage": 17.50,
+    "skills": ["cashiering", "stocking"],
+    "availability": {
+      "Mon": null,
+      "Tue": null,
+      "Wed": {"start": "14:00", "end": "22:00"},
+      "Thu": {"start": "14:00", "end": "22:00"},
+      "Fri": {"start": "14:00", "end": "22:00"},
+      "Sat": {"start": "10:00", "end": "22:00"},
+      "Sun": {"start": "10:00", "end": "22:00"}
+    },
+    "preferences": {"shift_type": "evening", "max_consecutive_days": 4}
+  },
+  {
+    "id": "E-009",
+    "store_id": "S-0001",
+    "name": "Fatima Al-Hassan",
+    "role": "Food Service",
+    "contract": "FT",
+    "max_hrs_week": 40,
+    "hourly_wage": 19.00,
+    "skills": ["food_service", "food_prep", "cashiering"],
+    "availability": {
+      "Mon": {"start": "06:00", "end": "18:00"},
+      "Tue": {"start": "06:00", "end": "18:00"},
+      "Wed": {"start": "06:00", "end": "18:00"},
+      "Thu": {"start": "06:00", "end": "18:00"},
+      "Fri": {"start": "06:00", "end": "18:00"},
+      "Sat": null,
+      "Sun": null
+    },
+    "preferences": {"shift_type": "morning", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-010",
+    "store_id": "S-0001",
+    "name": "Kevin Nguyen",
+    "role": "Food Service",
+    "contract": "PT",
+    "max_hrs_week": 24,
+    "hourly_wage": 18.50,
+    "skills": ["food_service", "food_prep", "coffee_bar"],
+    "availability": {
+      "Mon": null,
+      "Tue": {"start": "10:00", "end": "20:00"},
+      "Wed": {"start": "10:00", "end": "20:00"},
+      "Thu": {"start": "10:00", "end": "20:00"},
+      "Fri": {"start": "10:00", "end": "20:00"},
+      "Sat": {"start": "08:00", "end": "20:00"},
+      "Sun": {"start": "08:00", "end": "20:00"}
+    },
+    "preferences": {"shift_type": "day", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-011",
+    "store_id": "S-0001",
+    "name": "Olivia Reyes",
+    "role": "Coffee Bar",
+    "contract": "PT",
+    "max_hrs_week": 28,
+    "hourly_wage": 18.00,
+    "skills": ["coffee_bar", "cashiering"],
+    "availability": {
+      "Mon": {"start": "05:00", "end": "14:00"},
+      "Tue": {"start": "05:00", "end": "14:00"},
+      "Wed": {"start": "05:00", "end": "14:00"},
+      "Thu": null,
+      "Fri": {"start": "05:00", "end": "14:00"},
+      "Sat": {"start": "06:00", "end": "14:00"},
+      "Sun": {"start": "06:00", "end": "14:00"}
+    },
+    "preferences": {"shift_type": "morning", "max_consecutive_days": 5}
+  },
+  {
+    "id": "E-012",
+    "store_id": "S-0001",
+    "name": "Tyler Brooks",
+    "role": "7NOW Driver",
+    "contract": "PT",
+    "max_hrs_week": 20,
+    "hourly_wage": 17.00,
+    "skills": ["7now_delivery", "cashiering"],
+    "availability": {
+      "Mon": null,
+      "Tue": null,
+      "Wed": {"start": "16:00", "end": "23:59"},
+      "Thu": {"start": "16:00", "end": "23:59"},
+      "Fri": {"start": "16:00", "end": "23:59"},
+      "Sat": {"start": "12:00", "end": "23:59"},
+      "Sun": {"start": "12:00", "end": "23:59"}
+    },
+    "preferences": {"shift_type": "evening", "max_consecutive_days": 4}
+  }
+]
