@@ -12,8 +12,8 @@ import {
 
 import { Sidebar } from "~/components/Sidebar";
 import { TopBar } from "~/components/TopBar";
-import colorsAndType from "~/styles/colors_and_type.css?url";
-import appStyles from "~/styles/app.css?url";
+import colorsAndType from "./styles/colors_and_type.css?url";
+import appStyles from "./styles/app.css?url";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: colorsAndType },
